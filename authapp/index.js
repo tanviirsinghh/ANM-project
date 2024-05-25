@@ -6,7 +6,7 @@ require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 const cors= require("cors");
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 require("./config/database").connect()
 
 // route import and mount 

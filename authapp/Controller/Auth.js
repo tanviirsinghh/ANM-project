@@ -9,7 +9,7 @@ exports.signup = async (req, res) => {
     try {
         // get data
         const { name, email, password, role } = req.body;
-
+    //    console.log("sdf")
         // check if user already exist 
         const existingUser = await User.findOne({ email });
 
